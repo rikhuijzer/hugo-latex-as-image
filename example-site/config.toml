@@ -1,0 +1,4 @@
+baseURL = "http://example.org/"
+languageCode = "en-us"
+title = "Example Hugo website with LaTeX as images"
+theme = "hugo-book"

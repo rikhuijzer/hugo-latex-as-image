@@ -1,0 +1,7 @@
+#!/bin/sh
+
+# To debug using `echo` use `echo foo > log`.
+
+$PANDOC_ORIGINAL --bibliography=example-site/content/references.bib \
+  --filter mylatex-formulae-filter \
+  "$@"
