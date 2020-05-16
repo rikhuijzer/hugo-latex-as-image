@@ -1,0 +1,11 @@
+version: 2.1
+
+jobs:
+  build-website:
+    docker:
+      - image: rikhuijzer/hugo-latex-as-images:latest
+    steps:
+      - checkout
+      - run:
+          name: build-website
+          command: nix-shell --run './myhugo.sh --source example-site serve'
