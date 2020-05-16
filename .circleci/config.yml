@@ -3,7 +3,7 @@ version: 2.1
 jobs:
   build:
     docker:
-      - image: rikhuijzer/hugo-latex-as-images:latest
+      - image: rikhuijzer/hugo-latex-as-image:latest
     steps:
       - checkout
       - run:
