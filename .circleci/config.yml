@@ -8,4 +8,4 @@ jobs:
       - checkout
       - run:
           name: build-website
-          command: nix-shell --run './myhugo.sh --source example-site serve'
+          command: nix-shell --run './myhugo.sh --source example-site && mv example-site/public .'
