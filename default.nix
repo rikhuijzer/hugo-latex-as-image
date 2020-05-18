@@ -24,6 +24,7 @@ in pkgs.mkShell {
   name = "env";
   buildInputs = with pkgs; [
     ghostscript
+    git 
     haskellEnv
     hugo
     imagemagick
